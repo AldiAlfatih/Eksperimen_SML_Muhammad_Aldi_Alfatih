@@ -1,0 +1,2 @@
+Status code: 200
+{"predictions": [0, 1, 0]}

@@ -1,0 +1,9 @@
+model_request_total 1.0
+model_prediction_total 3.0
+model_error_total 0.0
+model_latency_seconds_count 1.0
+model_latency_seconds_sum 0.010826172999941264
+system_cpu_usage_percent 0.0
+system_ram_usage_percent 32.2
+model_serving_up 1.0
+model_last_response_status_code 200.0

@@ -1,0 +1,111 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+.Python
+env/
+venv/
+.venv/
+ENV/
+.env
+
+# ========================
+# Jupyter Notebook
+# ========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ========================
+# MLflow
+# ========================
+mlruns/
+mlartifacts/
+.mlflow/
+
+# ========================
+# Model artifacts & outputs
+# ========================
+training_artifacts/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+*.model
+
+# ========================
+# Data files (besar)
+# ========================
+*.csv
+*.parquet
+*.json.gz
+*.tsv
+!requirements*.txt
+
+# ========================
+# Screenshots & gambar hasil (opsional, hapus jika ingin include)
+# ========================
+# screenshoot_*.jpg
+# screenshoot_*.png
+
+# ========================
+# IDE & Editor
+# ========================
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.DS_Store
+Thumbs.db
+
+# ========================
+# OS
+# ========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ========================
+# Docker
+# ========================
+.dockerignore
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+
+# ========================
+# Pytest / testing
+# ========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ========================
+# Secrets & credentials
+# ========================
+.env
+.env.*
+secrets.yaml
+secrets.json
+*.pem
+*.key

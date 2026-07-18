@@ -1,0 +1,97 @@
+{
+  "title": "dashboard-muhammad-aldi-alfatih",
+  "schemaVersion": 38,
+  "version": 1,
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Total Request Model",
+      "targets": [
+        {
+          "expr": "model_request_total"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "CPU Usage",
+      "targets": [
+        {
+          "expr": "system_cpu_usage_percent"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "RAM Usage",
+      "targets": [
+        {
+          "expr": "system_ram_usage_percent"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Disk Usage",
+      "targets": [
+        {
+          "expr": "system_disk_usage_percent"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Model Accuracy",
+      "targets": [
+        {
+          "expr": "model_accuracy"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Model F1 Score",
+      "targets": [
+        {
+          "expr": "model_f1_score"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Model ROC AUC",
+      "targets": [
+        {
+          "expr": "model_roc_auc"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Latency P95",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, rate(model_latency_seconds_bucket[1m]))"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Prediction Total",
+      "targets": [
+        {
+          "expr": "model_prediction_total"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Error Total",
+      "targets": [
+        {
+          "expr": "model_error_total"
+        }
+      ]
+    }
+  ]
+}
