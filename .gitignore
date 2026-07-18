@@ -51,6 +51,9 @@ training_artifacts/
 *.json.gz
 *.tsv
 !requirements*.txt
+# Izinkan CSV dataset untuk keperluan submission
+!breast_cancer_raw/*.csv
+!preprocessing/breast_cancer_preprocessing/*.csv
 
 # ========================
 # Screenshots & gambar hasil (opsional, hapus jika ingin include)
